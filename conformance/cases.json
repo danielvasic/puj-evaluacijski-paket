@@ -1,0 +1,2608 @@
+{
+ "version": 1,
+ "tolerance": 0.0001,
+ "error": "max|x - expected| / max|expected|, oblik mora biti jednak",
+ "cases": [
+  {
+   "id": "zeros_3x4",
+   "op": "zeros",
+   "inputs": [],
+   "args": {
+    "m": 3,
+    "n": 4
+   },
+   "expected": "cases/zeros_3x4__expected.npy",
+   "shape": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "ones_3x4",
+   "op": "ones",
+   "inputs": [],
+   "args": {
+    "m": 3,
+    "n": 4
+   },
+   "expected": "cases/ones_3x4__expected.npy",
+   "shape": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "zeros_1x7",
+   "op": "zeros",
+   "inputs": [],
+   "args": {
+    "m": 1,
+    "n": 7
+   },
+   "expected": "cases/zeros_1x7__expected.npy",
+   "shape": [
+    1,
+    7
+   ]
+  },
+  {
+   "id": "ones_1x7",
+   "op": "ones",
+   "inputs": [],
+   "args": {
+    "m": 1,
+    "n": 7
+   },
+   "expected": "cases/ones_1x7__expected.npy",
+   "shape": [
+    1,
+    7
+   ]
+  },
+  {
+   "id": "full_2x5",
+   "op": "full",
+   "inputs": [],
+   "args": {
+    "m": 2,
+    "n": 5,
+    "value": -1.5
+   },
+   "expected": "cases/full_2x5__expected.npy",
+   "shape": [
+    2,
+    5
+   ]
+  },
+  {
+   "id": "oneHot_7_10",
+   "op": "oneHot",
+   "inputs": [
+    "cases/oneHot_7_10__in0.npy"
+   ],
+   "args": {
+    "classes": 10
+   },
+   "expected": "cases/oneHot_7_10__expected.npy",
+   "shape": [
+    7,
+    10
+   ]
+  },
+  {
+   "id": "oneHot_1_5",
+   "op": "oneHot",
+   "inputs": [
+    "cases/oneHot_1_5__in0.npy"
+   ],
+   "args": {
+    "classes": 5
+   },
+   "expected": "cases/oneHot_1_5__expected.npy",
+   "shape": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "reshape_6x4_3x8",
+   "op": "reshape",
+   "inputs": [
+    "cases/reshape_6x4_3x8__in0.npy"
+   ],
+   "args": {
+    "m": 3,
+    "n": 8
+   },
+   "expected": "cases/reshape_6x4_3x8__expected.npy",
+   "shape": [
+    3,
+    8
+   ]
+  },
+  {
+   "id": "reshape_12x2_1x24",
+   "op": "reshape",
+   "inputs": [
+    "cases/reshape_12x2_1x24__in0.npy"
+   ],
+   "args": {
+    "m": 1,
+    "n": 24
+   },
+   "expected": "cases/reshape_12x2_1x24__expected.npy",
+   "shape": [
+    1,
+    24
+   ]
+  },
+  {
+   "id": "reshape_130x257_257x130",
+   "op": "reshape",
+   "inputs": [
+    "cases/reshape_130x257_257x130__in0.npy"
+   ],
+   "args": {
+    "m": 257,
+    "n": 130
+   },
+   "expected": "cases/reshape_130x257_257x130__expected.npy",
+   "shape": [
+    257,
+    130
+   ]
+  },
+  {
+   "id": "transpose_7x5",
+   "op": "transpose",
+   "inputs": [
+    "cases/transpose_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/transpose_7x5__expected.npy",
+   "shape": [
+    5,
+    7
+   ]
+  },
+  {
+   "id": "transpose_1x9",
+   "op": "transpose",
+   "inputs": [
+    "cases/transpose_1x9__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/transpose_1x9__expected.npy",
+   "shape": [
+    9,
+    1
+   ]
+  },
+  {
+   "id": "transpose_130x257",
+   "op": "transpose",
+   "inputs": [
+    "cases/transpose_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/transpose_130x257__expected.npy",
+   "shape": [
+    257,
+    130
+   ]
+  },
+  {
+   "id": "sliceRows_7x5_2_5",
+   "op": "sliceRows",
+   "inputs": [
+    "cases/sliceRows_7x5_2_5__in0.npy"
+   ],
+   "args": {
+    "start": 2,
+    "end": 5
+   },
+   "expected": "cases/sliceRows_7x5_2_5__expected.npy",
+   "shape": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "sliceCols_7x5_1_4",
+   "op": "sliceCols",
+   "inputs": [
+    "cases/sliceCols_7x5_1_4__in0.npy"
+   ],
+   "args": {
+    "start": 1,
+    "end": 4
+   },
+   "expected": "cases/sliceCols_7x5_1_4__expected.npy",
+   "shape": [
+    7,
+    3
+   ]
+  },
+  {
+   "id": "sliceCols_130x257_3_4",
+   "op": "sliceCols",
+   "inputs": [
+    "cases/sliceCols_130x257_3_4__in0.npy"
+   ],
+   "args": {
+    "start": 3,
+    "end": 4
+   },
+   "expected": "cases/sliceCols_130x257_3_4__expected.npy",
+   "shape": [
+    130,
+    1
+   ]
+  },
+  {
+   "id": "concatCols_7x5_7x1",
+   "op": "concatCols",
+   "inputs": [
+    "cases/concatCols_7x5_7x1__in0.npy",
+    "cases/concatCols_7x5_7x1__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/concatCols_7x5_7x1__expected.npy",
+   "shape": [
+    7,
+    6
+   ]
+  },
+  {
+   "id": "concatCols_130x257_130x3",
+   "op": "concatCols",
+   "inputs": [
+    "cases/concatCols_130x257_130x3__in0.npy",
+    "cases/concatCols_130x257_130x3__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/concatCols_130x257_130x3__expected.npy",
+   "shape": [
+    130,
+    260
+   ]
+  },
+  {
+   "id": "add_1x1",
+   "op": "add",
+   "inputs": [
+    "cases/add_1x1__in0.npy",
+    "cases/add_1x1__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/add_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "add_7x5",
+   "op": "add",
+   "inputs": [
+    "cases/add_7x5__in0.npy",
+    "cases/add_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/add_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "add_33x17",
+   "op": "add",
+   "inputs": [
+    "cases/add_33x17__in0.npy",
+    "cases/add_33x17__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/add_33x17__expected.npy",
+   "shape": [
+    33,
+    17
+   ]
+  },
+  {
+   "id": "add_130x257",
+   "op": "add",
+   "inputs": [
+    "cases/add_130x257__in0.npy",
+    "cases/add_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/add_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "add_row_7x5",
+   "op": "add",
+   "inputs": [
+    "cases/add_row_7x5__in0.npy",
+    "cases/add_row_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/add_row_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "add_col_7x5",
+   "op": "add",
+   "inputs": [
+    "cases/add_col_7x5__in0.npy",
+    "cases/add_col_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/add_col_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "add_row_130x257",
+   "op": "add",
+   "inputs": [
+    "cases/add_row_130x257__in0.npy",
+    "cases/add_row_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/add_row_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "add_col_130x257",
+   "op": "add",
+   "inputs": [
+    "cases/add_col_130x257__in0.npy",
+    "cases/add_col_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/add_col_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "sub_1x1",
+   "op": "sub",
+   "inputs": [
+    "cases/sub_1x1__in0.npy",
+    "cases/sub_1x1__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/sub_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "sub_7x5",
+   "op": "sub",
+   "inputs": [
+    "cases/sub_7x5__in0.npy",
+    "cases/sub_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/sub_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "sub_33x17",
+   "op": "sub",
+   "inputs": [
+    "cases/sub_33x17__in0.npy",
+    "cases/sub_33x17__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/sub_33x17__expected.npy",
+   "shape": [
+    33,
+    17
+   ]
+  },
+  {
+   "id": "sub_130x257",
+   "op": "sub",
+   "inputs": [
+    "cases/sub_130x257__in0.npy",
+    "cases/sub_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/sub_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "sub_row_7x5",
+   "op": "sub",
+   "inputs": [
+    "cases/sub_row_7x5__in0.npy",
+    "cases/sub_row_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/sub_row_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "sub_col_7x5",
+   "op": "sub",
+   "inputs": [
+    "cases/sub_col_7x5__in0.npy",
+    "cases/sub_col_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/sub_col_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "sub_row_130x257",
+   "op": "sub",
+   "inputs": [
+    "cases/sub_row_130x257__in0.npy",
+    "cases/sub_row_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/sub_row_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "sub_col_130x257",
+   "op": "sub",
+   "inputs": [
+    "cases/sub_col_130x257__in0.npy",
+    "cases/sub_col_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/sub_col_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "mul_1x1",
+   "op": "mul",
+   "inputs": [
+    "cases/mul_1x1__in0.npy",
+    "cases/mul_1x1__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/mul_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "mul_7x5",
+   "op": "mul",
+   "inputs": [
+    "cases/mul_7x5__in0.npy",
+    "cases/mul_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/mul_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "mul_33x17",
+   "op": "mul",
+   "inputs": [
+    "cases/mul_33x17__in0.npy",
+    "cases/mul_33x17__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/mul_33x17__expected.npy",
+   "shape": [
+    33,
+    17
+   ]
+  },
+  {
+   "id": "mul_130x257",
+   "op": "mul",
+   "inputs": [
+    "cases/mul_130x257__in0.npy",
+    "cases/mul_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/mul_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "mul_row_7x5",
+   "op": "mul",
+   "inputs": [
+    "cases/mul_row_7x5__in0.npy",
+    "cases/mul_row_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/mul_row_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "mul_col_7x5",
+   "op": "mul",
+   "inputs": [
+    "cases/mul_col_7x5__in0.npy",
+    "cases/mul_col_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/mul_col_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "mul_row_130x257",
+   "op": "mul",
+   "inputs": [
+    "cases/mul_row_130x257__in0.npy",
+    "cases/mul_row_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/mul_row_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "mul_col_130x257",
+   "op": "mul",
+   "inputs": [
+    "cases/mul_col_130x257__in0.npy",
+    "cases/mul_col_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/mul_col_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "div_1x1",
+   "op": "div",
+   "inputs": [
+    "cases/div_1x1__in0.npy",
+    "cases/div_1x1__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/div_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "div_7x5",
+   "op": "div",
+   "inputs": [
+    "cases/div_7x5__in0.npy",
+    "cases/div_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/div_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "div_33x17",
+   "op": "div",
+   "inputs": [
+    "cases/div_33x17__in0.npy",
+    "cases/div_33x17__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/div_33x17__expected.npy",
+   "shape": [
+    33,
+    17
+   ]
+  },
+  {
+   "id": "div_130x257",
+   "op": "div",
+   "inputs": [
+    "cases/div_130x257__in0.npy",
+    "cases/div_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/div_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "div_row_7x5",
+   "op": "div",
+   "inputs": [
+    "cases/div_row_7x5__in0.npy",
+    "cases/div_row_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/div_row_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "div_col_7x5",
+   "op": "div",
+   "inputs": [
+    "cases/div_col_7x5__in0.npy",
+    "cases/div_col_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/div_col_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "div_row_130x257",
+   "op": "div",
+   "inputs": [
+    "cases/div_row_130x257__in0.npy",
+    "cases/div_row_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/div_row_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "div_col_130x257",
+   "op": "div",
+   "inputs": [
+    "cases/div_col_130x257__in0.npy",
+    "cases/div_col_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/div_col_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "minimum_1x1",
+   "op": "minimum",
+   "inputs": [
+    "cases/minimum_1x1__in0.npy",
+    "cases/minimum_1x1__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/minimum_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "minimum_7x5",
+   "op": "minimum",
+   "inputs": [
+    "cases/minimum_7x5__in0.npy",
+    "cases/minimum_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/minimum_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "minimum_33x17",
+   "op": "minimum",
+   "inputs": [
+    "cases/minimum_33x17__in0.npy",
+    "cases/minimum_33x17__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/minimum_33x17__expected.npy",
+   "shape": [
+    33,
+    17
+   ]
+  },
+  {
+   "id": "minimum_130x257",
+   "op": "minimum",
+   "inputs": [
+    "cases/minimum_130x257__in0.npy",
+    "cases/minimum_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/minimum_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "minimum_row_7x5",
+   "op": "minimum",
+   "inputs": [
+    "cases/minimum_row_7x5__in0.npy",
+    "cases/minimum_row_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/minimum_row_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "minimum_col_7x5",
+   "op": "minimum",
+   "inputs": [
+    "cases/minimum_col_7x5__in0.npy",
+    "cases/minimum_col_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/minimum_col_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "minimum_row_130x257",
+   "op": "minimum",
+   "inputs": [
+    "cases/minimum_row_130x257__in0.npy",
+    "cases/minimum_row_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/minimum_row_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "minimum_col_130x257",
+   "op": "minimum",
+   "inputs": [
+    "cases/minimum_col_130x257__in0.npy",
+    "cases/minimum_col_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/minimum_col_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "maximum_1x1",
+   "op": "maximum",
+   "inputs": [
+    "cases/maximum_1x1__in0.npy",
+    "cases/maximum_1x1__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/maximum_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "maximum_7x5",
+   "op": "maximum",
+   "inputs": [
+    "cases/maximum_7x5__in0.npy",
+    "cases/maximum_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/maximum_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "maximum_33x17",
+   "op": "maximum",
+   "inputs": [
+    "cases/maximum_33x17__in0.npy",
+    "cases/maximum_33x17__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/maximum_33x17__expected.npy",
+   "shape": [
+    33,
+    17
+   ]
+  },
+  {
+   "id": "maximum_130x257",
+   "op": "maximum",
+   "inputs": [
+    "cases/maximum_130x257__in0.npy",
+    "cases/maximum_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/maximum_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "maximum_row_7x5",
+   "op": "maximum",
+   "inputs": [
+    "cases/maximum_row_7x5__in0.npy",
+    "cases/maximum_row_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/maximum_row_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "maximum_col_7x5",
+   "op": "maximum",
+   "inputs": [
+    "cases/maximum_col_7x5__in0.npy",
+    "cases/maximum_col_7x5__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/maximum_col_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "maximum_row_130x257",
+   "op": "maximum",
+   "inputs": [
+    "cases/maximum_row_130x257__in0.npy",
+    "cases/maximum_row_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/maximum_row_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "maximum_col_130x257",
+   "op": "maximum",
+   "inputs": [
+    "cases/maximum_col_130x257__in0.npy",
+    "cases/maximum_col_130x257__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/maximum_col_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "add_scalar_7x5",
+   "op": "add",
+   "inputs": [
+    "cases/add_scalar_7x5__in0.npy"
+   ],
+   "args": {
+    "scalar": 2.5
+   },
+   "expected": "cases/add_scalar_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "add_scalar_130x257",
+   "op": "add",
+   "inputs": [
+    "cases/add_scalar_130x257__in0.npy"
+   ],
+   "args": {
+    "scalar": 2.5
+   },
+   "expected": "cases/add_scalar_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "sub_scalar_7x5",
+   "op": "sub",
+   "inputs": [
+    "cases/sub_scalar_7x5__in0.npy"
+   ],
+   "args": {
+    "scalar": -0.75
+   },
+   "expected": "cases/sub_scalar_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "sub_scalar_130x257",
+   "op": "sub",
+   "inputs": [
+    "cases/sub_scalar_130x257__in0.npy"
+   ],
+   "args": {
+    "scalar": -0.75
+   },
+   "expected": "cases/sub_scalar_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "mul_scalar_7x5",
+   "op": "mul",
+   "inputs": [
+    "cases/mul_scalar_7x5__in0.npy"
+   ],
+   "args": {
+    "scalar": -1.25
+   },
+   "expected": "cases/mul_scalar_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "mul_scalar_130x257",
+   "op": "mul",
+   "inputs": [
+    "cases/mul_scalar_130x257__in0.npy"
+   ],
+   "args": {
+    "scalar": -1.25
+   },
+   "expected": "cases/mul_scalar_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "div_scalar_7x5",
+   "op": "div",
+   "inputs": [
+    "cases/div_scalar_7x5__in0.npy"
+   ],
+   "args": {
+    "scalar": 0.4
+   },
+   "expected": "cases/div_scalar_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "div_scalar_130x257",
+   "op": "div",
+   "inputs": [
+    "cases/div_scalar_130x257__in0.npy"
+   ],
+   "args": {
+    "scalar": 0.4
+   },
+   "expected": "cases/div_scalar_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "clamp_7x5",
+   "op": "clamp",
+   "inputs": [
+    "cases/clamp_7x5__in0.npy"
+   ],
+   "args": {
+    "lo": -0.3,
+    "hi": 0.6
+   },
+   "expected": "cases/clamp_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "gt_7x5",
+   "op": "gt",
+   "inputs": [
+    "cases/gt_7x5__in0.npy"
+   ],
+   "args": {
+    "scalar": 0.25
+   },
+   "expected": "cases/gt_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "clamp_130x257",
+   "op": "clamp",
+   "inputs": [
+    "cases/clamp_130x257__in0.npy"
+   ],
+   "args": {
+    "lo": -0.3,
+    "hi": 0.6
+   },
+   "expected": "cases/clamp_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "gt_130x257",
+   "op": "gt",
+   "inputs": [
+    "cases/gt_130x257__in0.npy"
+   ],
+   "args": {
+    "scalar": 0.25
+   },
+   "expected": "cases/gt_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "neg_1x1",
+   "op": "neg",
+   "inputs": [
+    "cases/neg_1x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/neg_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "neg_7x5",
+   "op": "neg",
+   "inputs": [
+    "cases/neg_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/neg_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "neg_130x257",
+   "op": "neg",
+   "inputs": [
+    "cases/neg_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/neg_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "abs_1x1",
+   "op": "abs",
+   "inputs": [
+    "cases/abs_1x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/abs_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "abs_7x5",
+   "op": "abs",
+   "inputs": [
+    "cases/abs_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/abs_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "abs_130x257",
+   "op": "abs",
+   "inputs": [
+    "cases/abs_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/abs_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "exp_1x1",
+   "op": "exp",
+   "inputs": [
+    "cases/exp_1x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/exp_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "exp_7x5",
+   "op": "exp",
+   "inputs": [
+    "cases/exp_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/exp_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "exp_130x257",
+   "op": "exp",
+   "inputs": [
+    "cases/exp_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/exp_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "log_1x1",
+   "op": "log",
+   "inputs": [
+    "cases/log_1x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/log_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "log_7x5",
+   "op": "log",
+   "inputs": [
+    "cases/log_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/log_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "log_130x257",
+   "op": "log",
+   "inputs": [
+    "cases/log_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/log_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "sqrt_1x1",
+   "op": "sqrt",
+   "inputs": [
+    "cases/sqrt_1x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/sqrt_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "sqrt_7x5",
+   "op": "sqrt",
+   "inputs": [
+    "cases/sqrt_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/sqrt_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "sqrt_130x257",
+   "op": "sqrt",
+   "inputs": [
+    "cases/sqrt_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/sqrt_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "rsqrt_1x1",
+   "op": "rsqrt",
+   "inputs": [
+    "cases/rsqrt_1x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/rsqrt_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "rsqrt_7x5",
+   "op": "rsqrt",
+   "inputs": [
+    "cases/rsqrt_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/rsqrt_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "rsqrt_130x257",
+   "op": "rsqrt",
+   "inputs": [
+    "cases/rsqrt_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/rsqrt_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "relu_1x1",
+   "op": "relu",
+   "inputs": [
+    "cases/relu_1x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/relu_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "relu_7x5",
+   "op": "relu",
+   "inputs": [
+    "cases/relu_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/relu_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "relu_130x257",
+   "op": "relu",
+   "inputs": [
+    "cases/relu_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/relu_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "sigmoid_1x1",
+   "op": "sigmoid",
+   "inputs": [
+    "cases/sigmoid_1x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/sigmoid_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "sigmoid_7x5",
+   "op": "sigmoid",
+   "inputs": [
+    "cases/sigmoid_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/sigmoid_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "sigmoid_130x257",
+   "op": "sigmoid",
+   "inputs": [
+    "cases/sigmoid_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/sigmoid_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "tanh_1x1",
+   "op": "tanh",
+   "inputs": [
+    "cases/tanh_1x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/tanh_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "tanh_7x5",
+   "op": "tanh",
+   "inputs": [
+    "cases/tanh_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/tanh_7x5__expected.npy",
+   "shape": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "tanh_130x257",
+   "op": "tanh",
+   "inputs": [
+    "cases/tanh_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/tanh_130x257__expected.npy",
+   "shape": [
+    130,
+    257
+   ]
+  },
+  {
+   "id": "matmul_1x1_1x1",
+   "op": "matmul",
+   "inputs": [
+    "cases/matmul_1x1_1x1__in0.npy",
+    "cases/matmul_1x1_1x1__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/matmul_1x1_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "matmul_4x4_4x4",
+   "op": "matmul",
+   "inputs": [
+    "cases/matmul_4x4_4x4__in0.npy",
+    "cases/matmul_4x4_4x4__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/matmul_4x4_4x4__expected.npy",
+   "shape": [
+    4,
+    4
+   ]
+  },
+  {
+   "id": "matmul_7x5_5x3",
+   "op": "matmul",
+   "inputs": [
+    "cases/matmul_7x5_5x3__in0.npy",
+    "cases/matmul_7x5_5x3__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/matmul_7x5_5x3__expected.npy",
+   "shape": [
+    7,
+    3
+   ]
+  },
+  {
+   "id": "matmul_1x8_8x1",
+   "op": "matmul",
+   "inputs": [
+    "cases/matmul_1x8_8x1__in0.npy",
+    "cases/matmul_1x8_8x1__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/matmul_1x8_8x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "matmul_8x1_1x8",
+   "op": "matmul",
+   "inputs": [
+    "cases/matmul_8x1_1x8__in0.npy",
+    "cases/matmul_8x1_1x8__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/matmul_8x1_1x8__expected.npy",
+   "shape": [
+    8,
+    8
+   ]
+  },
+  {
+   "id": "matmul_33x17_17x65",
+   "op": "matmul",
+   "inputs": [
+    "cases/matmul_33x17_17x65__in0.npy",
+    "cases/matmul_33x17_17x65__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/matmul_33x17_17x65__expected.npy",
+   "shape": [
+    33,
+    65
+   ]
+  },
+  {
+   "id": "matmul_64x64_64x64",
+   "op": "matmul",
+   "inputs": [
+    "cases/matmul_64x64_64x64__in0.npy",
+    "cases/matmul_64x64_64x64__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/matmul_64x64_64x64__expected.npy",
+   "shape": [
+    64,
+    64
+   ]
+  },
+  {
+   "id": "matmul_130x257_257x129",
+   "op": "matmul",
+   "inputs": [
+    "cases/matmul_130x257_257x129__in0.npy",
+    "cases/matmul_130x257_257x129__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/matmul_130x257_257x129__expected.npy",
+   "shape": [
+    130,
+    129
+   ]
+  },
+  {
+   "id": "matmul_1000x4_4x4",
+   "op": "matmul",
+   "inputs": [
+    "cases/matmul_1000x4_4x4__in0.npy",
+    "cases/matmul_1000x4_4x4__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/matmul_1000x4_4x4__expected.npy",
+   "shape": [
+    1000,
+    4
+   ]
+  },
+  {
+   "id": "dot_1x9",
+   "op": "dot",
+   "inputs": [
+    "cases/dot_1x9__in0.npy",
+    "cases/dot_1x9__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/dot_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "dot_9x1",
+   "op": "dot",
+   "inputs": [
+    "cases/dot_9x1__in0.npy",
+    "cases/dot_9x1__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/dot_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "dot_1x1031",
+   "op": "dot",
+   "inputs": [
+    "cases/dot_1x1031__in0.npy",
+    "cases/dot_1x1031__in1.npy"
+   ],
+   "args": {},
+   "expected": "cases/dot_1x1031__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "sum_all_7x5",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_all_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/sum_all_7x5__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "sum_axis0_7x5",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_axis0_7x5__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/sum_axis0_7x5__expected.npy",
+   "shape": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "sum_axis1_7x5",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_axis1_7x5__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/sum_axis1_7x5__expected.npy",
+   "shape": [
+    7,
+    1
+   ]
+  },
+  {
+   "id": "sum_all_1x9",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_all_1x9__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/sum_all_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "sum_axis0_1x9",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_axis0_1x9__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/sum_axis0_1x9__expected.npy",
+   "shape": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "sum_axis1_1x9",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_axis1_1x9__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/sum_axis1_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "sum_all_9x1",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_all_9x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/sum_all_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "sum_axis0_9x1",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_axis0_9x1__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/sum_axis0_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "sum_axis1_9x1",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_axis1_9x1__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/sum_axis1_9x1__expected.npy",
+   "shape": [
+    9,
+    1
+   ]
+  },
+  {
+   "id": "sum_all_130x257",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_all_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/sum_all_130x257__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "sum_axis0_130x257",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_axis0_130x257__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/sum_axis0_130x257__expected.npy",
+   "shape": [
+    1,
+    257
+   ]
+  },
+  {
+   "id": "sum_axis1_130x257",
+   "op": "sum",
+   "inputs": [
+    "cases/sum_axis1_130x257__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/sum_axis1_130x257__expected.npy",
+   "shape": [
+    130,
+    1
+   ]
+  },
+  {
+   "id": "mean_all_7x5",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_all_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/mean_all_7x5__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "mean_axis0_7x5",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_axis0_7x5__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/mean_axis0_7x5__expected.npy",
+   "shape": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "mean_axis1_7x5",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_axis1_7x5__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/mean_axis1_7x5__expected.npy",
+   "shape": [
+    7,
+    1
+   ]
+  },
+  {
+   "id": "mean_all_1x9",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_all_1x9__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/mean_all_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "mean_axis0_1x9",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_axis0_1x9__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/mean_axis0_1x9__expected.npy",
+   "shape": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "mean_axis1_1x9",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_axis1_1x9__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/mean_axis1_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "mean_all_9x1",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_all_9x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/mean_all_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "mean_axis0_9x1",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_axis0_9x1__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/mean_axis0_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "mean_axis1_9x1",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_axis1_9x1__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/mean_axis1_9x1__expected.npy",
+   "shape": [
+    9,
+    1
+   ]
+  },
+  {
+   "id": "mean_all_130x257",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_all_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/mean_all_130x257__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "mean_axis0_130x257",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_axis0_130x257__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/mean_axis0_130x257__expected.npy",
+   "shape": [
+    1,
+    257
+   ]
+  },
+  {
+   "id": "mean_axis1_130x257",
+   "op": "mean",
+   "inputs": [
+    "cases/mean_axis1_130x257__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/mean_axis1_130x257__expected.npy",
+   "shape": [
+    130,
+    1
+   ]
+  },
+  {
+   "id": "max_all_7x5",
+   "op": "max",
+   "inputs": [
+    "cases/max_all_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/max_all_7x5__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "max_axis0_7x5",
+   "op": "max",
+   "inputs": [
+    "cases/max_axis0_7x5__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/max_axis0_7x5__expected.npy",
+   "shape": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "max_axis1_7x5",
+   "op": "max",
+   "inputs": [
+    "cases/max_axis1_7x5__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/max_axis1_7x5__expected.npy",
+   "shape": [
+    7,
+    1
+   ]
+  },
+  {
+   "id": "max_all_1x9",
+   "op": "max",
+   "inputs": [
+    "cases/max_all_1x9__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/max_all_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "max_axis0_1x9",
+   "op": "max",
+   "inputs": [
+    "cases/max_axis0_1x9__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/max_axis0_1x9__expected.npy",
+   "shape": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "max_axis1_1x9",
+   "op": "max",
+   "inputs": [
+    "cases/max_axis1_1x9__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/max_axis1_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "max_all_9x1",
+   "op": "max",
+   "inputs": [
+    "cases/max_all_9x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/max_all_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "max_axis0_9x1",
+   "op": "max",
+   "inputs": [
+    "cases/max_axis0_9x1__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/max_axis0_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "max_axis1_9x1",
+   "op": "max",
+   "inputs": [
+    "cases/max_axis1_9x1__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/max_axis1_9x1__expected.npy",
+   "shape": [
+    9,
+    1
+   ]
+  },
+  {
+   "id": "max_all_130x257",
+   "op": "max",
+   "inputs": [
+    "cases/max_all_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/max_all_130x257__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "max_axis0_130x257",
+   "op": "max",
+   "inputs": [
+    "cases/max_axis0_130x257__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/max_axis0_130x257__expected.npy",
+   "shape": [
+    1,
+    257
+   ]
+  },
+  {
+   "id": "max_axis1_130x257",
+   "op": "max",
+   "inputs": [
+    "cases/max_axis1_130x257__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/max_axis1_130x257__expected.npy",
+   "shape": [
+    130,
+    1
+   ]
+  },
+  {
+   "id": "min_all_7x5",
+   "op": "min",
+   "inputs": [
+    "cases/min_all_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/min_all_7x5__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "min_axis0_7x5",
+   "op": "min",
+   "inputs": [
+    "cases/min_axis0_7x5__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/min_axis0_7x5__expected.npy",
+   "shape": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "min_axis1_7x5",
+   "op": "min",
+   "inputs": [
+    "cases/min_axis1_7x5__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/min_axis1_7x5__expected.npy",
+   "shape": [
+    7,
+    1
+   ]
+  },
+  {
+   "id": "min_all_1x9",
+   "op": "min",
+   "inputs": [
+    "cases/min_all_1x9__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/min_all_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "min_axis0_1x9",
+   "op": "min",
+   "inputs": [
+    "cases/min_axis0_1x9__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/min_axis0_1x9__expected.npy",
+   "shape": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "min_axis1_1x9",
+   "op": "min",
+   "inputs": [
+    "cases/min_axis1_1x9__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/min_axis1_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "min_all_9x1",
+   "op": "min",
+   "inputs": [
+    "cases/min_all_9x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/min_all_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "min_axis0_9x1",
+   "op": "min",
+   "inputs": [
+    "cases/min_axis0_9x1__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/min_axis0_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "min_axis1_9x1",
+   "op": "min",
+   "inputs": [
+    "cases/min_axis1_9x1__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/min_axis1_9x1__expected.npy",
+   "shape": [
+    9,
+    1
+   ]
+  },
+  {
+   "id": "min_all_130x257",
+   "op": "min",
+   "inputs": [
+    "cases/min_all_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/min_all_130x257__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "min_axis0_130x257",
+   "op": "min",
+   "inputs": [
+    "cases/min_axis0_130x257__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/min_axis0_130x257__expected.npy",
+   "shape": [
+    1,
+    257
+   ]
+  },
+  {
+   "id": "min_axis1_130x257",
+   "op": "min",
+   "inputs": [
+    "cases/min_axis1_130x257__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/min_axis1_130x257__expected.npy",
+   "shape": [
+    130,
+    1
+   ]
+  },
+  {
+   "id": "argmax_all_7x5",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_all_7x5__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/argmax_all_7x5__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "argmax_axis0_7x5",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_axis0_7x5__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/argmax_axis0_7x5__expected.npy",
+   "shape": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "argmax_axis1_7x5",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_axis1_7x5__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/argmax_axis1_7x5__expected.npy",
+   "shape": [
+    7,
+    1
+   ]
+  },
+  {
+   "id": "argmax_all_1x9",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_all_1x9__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/argmax_all_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "argmax_axis0_1x9",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_axis0_1x9__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/argmax_axis0_1x9__expected.npy",
+   "shape": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "argmax_axis1_1x9",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_axis1_1x9__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/argmax_axis1_1x9__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "argmax_all_9x1",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_all_9x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/argmax_all_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "argmax_axis0_9x1",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_axis0_9x1__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/argmax_axis0_9x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "argmax_axis1_9x1",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_axis1_9x1__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/argmax_axis1_9x1__expected.npy",
+   "shape": [
+    9,
+    1
+   ]
+  },
+  {
+   "id": "argmax_all_130x257",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_all_130x257__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/argmax_all_130x257__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "argmax_axis0_130x257",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_axis0_130x257__in0.npy"
+   ],
+   "args": {
+    "axis": 0
+   },
+   "expected": "cases/argmax_axis0_130x257__expected.npy",
+   "shape": [
+    1,
+    257
+   ]
+  },
+  {
+   "id": "argmax_axis1_130x257",
+   "op": "argmax",
+   "inputs": [
+    "cases/argmax_axis1_130x257__in0.npy"
+   ],
+   "args": {
+    "axis": 1
+   },
+   "expected": "cases/argmax_axis1_130x257__expected.npy",
+   "shape": [
+    130,
+    1
+   ]
+  },
+  {
+   "id": "normalizeRows_7x3",
+   "op": "normalizeRows",
+   "inputs": [
+    "cases/normalizeRows_7x3__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/normalizeRows_7x3__expected.npy",
+   "shape": [
+    7,
+    3
+   ]
+  },
+  {
+   "id": "normalizeRows_1000x3",
+   "op": "normalizeRows",
+   "inputs": [
+    "cases/normalizeRows_1000x3__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/normalizeRows_1000x3__expected.npy",
+   "shape": [
+    1000,
+    3
+   ]
+  },
+  {
+   "id": "normalizeRows_5x1",
+   "op": "normalizeRows",
+   "inputs": [
+    "cases/normalizeRows_5x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/normalizeRows_5x1__expected.npy",
+   "shape": [
+    5,
+    1
+   ]
+  },
+  {
+   "id": "normalizeRows_33x17",
+   "op": "normalizeRows",
+   "inputs": [
+    "cases/normalizeRows_33x17__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/normalizeRows_33x17__expected.npy",
+   "shape": [
+    33,
+    17
+   ]
+  },
+  {
+   "id": "softmaxRows_7x10",
+   "op": "softmaxRows",
+   "inputs": [
+    "cases/softmaxRows_7x10__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/softmaxRows_7x10__expected.npy",
+   "shape": [
+    7,
+    10
+   ]
+  },
+  {
+   "id": "softmaxRows_64x10_large",
+   "op": "softmaxRows",
+   "inputs": [
+    "cases/softmaxRows_64x10_large__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/softmaxRows_64x10_large__expected.npy",
+   "shape": [
+    64,
+    10
+   ]
+  },
+  {
+   "id": "softmaxRows_1x1",
+   "op": "softmaxRows",
+   "inputs": [
+    "cases/softmaxRows_1x1__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/softmaxRows_1x1__expected.npy",
+   "shape": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "softmaxRows_5x33",
+   "op": "softmaxRows",
+   "inputs": [
+    "cases/softmaxRows_5x33__in0.npy"
+   ],
+   "args": {},
+   "expected": "cases/softmaxRows_5x33__expected.npy",
+   "shape": [
+    5,
+    33
+   ]
+  }
+ ]
+}

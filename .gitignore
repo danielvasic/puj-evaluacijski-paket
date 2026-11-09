@@ -1,0 +1,12 @@
+# Generira se lokalno: python data/generate_data.py, python golden/make_golden.py
+data/**/*.npy
+data/raw/
+golden/*.npy
+
+# Rezultati mjerenja i bodovanja
+out/
+results/
+izvjestaj/
+
+__pycache__/
+.venv/
