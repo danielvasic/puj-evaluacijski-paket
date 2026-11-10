@@ -111,6 +111,8 @@ Pregled jednog framea kao PNG: `python reference/render.py --mesh 1m --frame 13 
 
 Mjeri se samo izračun: učitavanje datoteka i priprema (npr. `oneHot` oznaka u B10) su izvan mjerenja.
 
+Rezultate smijete pisati u unaprijed alocirane tenzore, ako takve operacije postoje u javnom API-ju vaše biblioteke. Alokacija je tada izvan mjerenja, ali svaki poziv mora ponovno izračunati cijeli rezultat; vraćanje rezultata spremljenog iz prethodnog poziva nije dopušteno. NumPy referenca namjerno ostaje idiomatska i svaki put stvara nove nizove.
+
 | ID | Ulaz | Mjereni izračun | Izlazne datoteke |
 | --- | --- | --- | --- |
 | B1 | `B1_a`, `B1_b` | `matmul(a, b)` | `B1` |
